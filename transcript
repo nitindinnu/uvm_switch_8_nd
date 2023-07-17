@@ -14,222 +14,68 @@
 # //
 # do run.do
 # QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
-# Start time: 17:43:53 on Jul 17,2023
+# Start time: 17:45:34 on Jul 17,2023
 # vlog -reportprogress 300 top.sv interface.sv rtl.sv 
-# ** Error: top.sv(16): Cannot find `include file "uvm.svh" in directories:
-#     C:/questasim64_10.7c/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(49): (vlog-2163) Macro `uvm_object_utils_begin is undefined.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(49): near "(": syntax error, unexpected '(', expecting function or task or "SystemVerilog keyword 'pure'".
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(50): (vlog-2163) Macro `uvm_field_int is undefined.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(51): (vlog-2163) Macro `uvm_field_int is undefined.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(52): (vlog-2163) Macro `uvm_field_int is undefined.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(53): (vlog-2163) Macro `uvm_field_array_int is undefined.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(54): (vlog-2163) Macro `uvm_field_int is undefined.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(55): (vlog-2163) Macro `uvm_object_utils_end is undefined.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(58): near "do_pack": syntax error, unexpected IDENTIFIER, expecting TYPE_IDENTIFIER.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(59): near "(": syntax error, unexpected '(', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(60): near "(": syntax error, unexpected '(', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(61): near "(": syntax error, unexpected '(', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(64): near "(": syntax error, unexpected '(', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(22)
-# ** at Packet.sv(69): near "do_pack": syntax error, unexpected IDENTIFIER, expecting TYPE_IDENTIFIER.
-# ** Error: ** while parsing file included at top.sv(22)
-# ** at Packet.sv(71): (vlog-13205) Syntax error found in the scope following 'da'. Is there a missing '::'?
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at Sequencer.sv(17): (vlog-2163) Macro `uvm_sequencer_utils is undefined.
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(23)
-# ** at Sequencer.sv(17): near "(": syntax error, unexpected '(', expecting function or task or "SystemVerilog keyword 'pure'".
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (clk).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (reset).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (data_status).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (data).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (mem_en).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (mem_rd_wr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (mem_add).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (mem_data).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (port0).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (port1).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (port2).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (port3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (ready_0).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (ready_1).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (ready_2).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(1): Illegal use of 'automatic' for variable declaration (ready_3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (read_0).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (read_1).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (read_2).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (read_3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (ajsdfhsadf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (asdfdfdf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (sdfgdgh).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (yuioyuioyui).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (sdfdfwqeq).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (ytogbr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (djlp73sdfh).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (j348rfkf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (jsdagfjsd0).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (jsdagfjsd1).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (jsdagfjsd2).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (jsdagfjsd3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gghwpmd).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gghwpmd0).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gghwpmd1).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gghwpmd2).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gghwpmd3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (skdhgh).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (edonmf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (gspnmdfgh).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (ld3).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (fggomnekdfujnbvspbnd).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (sjdfhsenb).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (data_out_fsm).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (qpnfyeh).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (clkghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (resetghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (sjdfhsenbghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (readghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (data_inghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (fgpqbwer49h5f8hb459bh349brghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(2): Illegal use of 'automatic' for variable declaration (fullghtr).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (slkjrfaergera634bf9r34krdfv8d54vkt9v344srst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (askhrgedrgsrst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (awe5jhklsdrt97834k5jberirst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (read_srst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (fhdjrihnfrst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (jsdagfjsdsrst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (ggopnwrdo46bgh06d45t78rcb7yh7r5dfbvn45rfnh79ib3kd06gn54klt7srst).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (slkjrfaergera634bf9r34krdfv8d54vkt9v3442f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (askhrgedrg2f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (sjdfhsenb_2f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (read_2f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (data_in_2f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (jsdagfjsd2f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (ggopnwrdo46bgh06d45t78rcb7yh7r5dfbvn45rfnh79ib3kd06gn54klt72f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (clkghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (resetghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (sjdfhsenbghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (readghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (data_inghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (jsdagfjsd3f).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (fullghwonmfghf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (slkjrfaergera634bf9r34krdfv8d54vkt9v344s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (askhrgedrgs).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (mem0_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (mem1_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(3): Illegal use of 'automatic' for variable declaration (mem2_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (mem3_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (gghwpmd_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (fggomnekdfujnbvspbnd_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (data_status_s).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (fhdjrihnf).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (awe5jhklsdrt97834k5jberi).
-# ** Error: ** while parsing file included at top.sv(23)
-# ** at rtl.sv(4): Illegal use of 'automatic' for variable declaration (mem).
-# ** Error: (vlog-13069) ** while parsing file included at top.sv(24)
-# ** at Sequence.sv(11): near "class": syntax error, unexpected class.
-# ** Error: ** while parsing file included at top.sv(24)
-# ** at Sequence.sv(11): (vlog-13205) Syntax error found in the scope following 'S'. Is there a missing '::'?
-# End time: 17:43:54 on Jul 17,2023, Elapsed time: 0:00:01
-# Errors: 105, Warnings: 0
-# ** Error: C:/questasim64_10.7c/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_10.7c/win64/vlog failed.
-#     while executing
-# "vlog top.sv interface.sv rtl.sv"
+# ** Note: (vlog-2286) top.sv(16): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# -- Compiling interface mem_interface
+# -- Compiling interface input_interface
+# -- Compiling interface output_interface
+# -- Compiling module switch
+# 
+# Top level modules:
+# 	top
+# End time: 17:45:35 on Jul 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim top 
+# Start time: 17:45:35 on Jul 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.output_interface(fast)
+# Loading work.mem_interface(fast)
+# Loading work.input_interface(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_FATAL @ 0: reporter [NOCOMP] No components instantiated. You must either instantiate at least one component before calling run_test or use run_test to do so. To run a test using run_test, use +UVM_TESTNAME or supply the test name in the argument to run_test(). Exiting simulation.
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    2
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [NOCOMP]     1
+# [Questa UVM]     2
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 0  Instance: /top
+# 1
+# Break in Function uvm_pkg/uvm_report_object::die at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh line 292
