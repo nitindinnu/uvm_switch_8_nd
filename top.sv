@@ -16,6 +16,7 @@
  `include "uvm_macros.svh"
 import uvm_pkg::* ;
 
+
 module top();
 
 `include "Configuration.sv"
@@ -24,6 +25,8 @@ module top();
 `include "Sequence.sv"
 `include "Driver.sv"
 `include "Receiver.sv"
+//`include "interface.sv"
+//`include "rtl.sv"
 `include "Scoreboard.sv" 
 `include "Environment.sv"
 `include "test.sv"
@@ -69,7 +72,7 @@ initial begin
     cfg.mem_intf = mem_intf;
     cfg.output_intf = output_intf;
    
-    run_test();
+    run_test("test1");
 end
 
 /////////////////////////////////////////////////////

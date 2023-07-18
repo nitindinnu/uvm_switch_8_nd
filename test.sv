@@ -12,6 +12,7 @@ class test1 extends uvm_test;
     `uvm_component_utils(test1)
 
      Environment t_env ;
+     //Configuration cfg;
 
 
     function new (string name="test1", uvm_component parent=null);
@@ -22,7 +23,7 @@ class test1 extends uvm_test;
 
     virtual function void build();
         super.build();
-
+       // cfg=new();
         cfg.device_add[0]= 0;
         cfg.device_add[1]= 1;
         cfg.device_add[2]= 2;

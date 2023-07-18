@@ -1,16 +1,8 @@
-////////////////////////////////////////////////
-////s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s////
-////s           www.testbench.in           s////
-////s                                      s////
-////s              UVM Tutorial            s////
-////s                                      s////
-////s            gopi@testbench.in          s////
-////s~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~s////
-//////////////////////////////////////////////// 
+
 `ifndef GUARD_PACKET
 `define GUARD_PACKET
-
-
+`include "uvm_macros.svh"
+ import uvm_pkg::*;
 //Define the enumerated types for packet types
 typedef enum { GOOD_FCS, BAD_FCS } fcs_kind_t;
 
@@ -81,7 +73,7 @@ class Packet extends uvm_sequence_item;
 
 endclass : Packet
 
-/*
+
 /////////////////////////////////////////////////////////
 ////    Test to check the packet implementation      ////
 /////////////////////////////////////////////////////////
@@ -112,5 +104,5 @@ module test;
     
 endmodule
 
-*/
+
 `endif

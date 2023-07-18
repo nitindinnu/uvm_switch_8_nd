@@ -270,3 +270,195 @@ do run.do
 #    Time: 0 ns  Iteration: 215  Instance: /top
 # 1
 # Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 17:52:21 on Jul 17,2023
+# vlog -reportprogress 300 top.sv interface.sv rtl.sv 
+# ** Note: (vlog-2286) top.sv(16): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Warning: (vlog-13184) Packet.sv(119): The Verilog preprocessor found an `endif directive matched to an `if directive in a different file: top.sv(10)
+# ** Error: top.sv(104): Mismatched `endif compiler directive.
+# End time: 17:52:21 on Jul 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# ** Error: C:/questasim64_10.7c/win64/vlog failed.
+# Error in macro ./run.do line 1
+# C:/questasim64_10.7c/win64/vlog failed.
+#     while executing
+# "vlog top.sv interface.sv rtl.sv"
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 17:52:40 on Jul 17,2023
+# vlog -reportprogress 300 top.sv interface.sv rtl.sv 
+# ** Note: (vlog-2286) top.sv(16): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# -- Compiling interface mem_interface
+# -- Compiling interface input_interface
+# -- Compiling interface output_interface
+# -- Compiling module switch
+# 
+# Top level modules:
+# 	top
+# End time: 17:52:41 on Jul 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:52:43 on Jul 17,2023, Elapsed time: 0:03:50
+# Errors: 4, Warnings: 1
+# vsim top "+UVM_TESTNAME=test1" "+UVM_NO_RELNOTES" 
+# Start time: 17:52:44 on Jul 17,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.output_interface(fast)
+# Loading work.mem_interface(fast)
+# Loading work.input_interface(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test1...
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_random_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_exhaustive_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_simple_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(477) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] default_sequence config parameter is deprecated and not part of the UVM standard. See documentation for uvm_sequencer_base::start_phase_sequence().
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(482) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] count config parameter is deprecated and not part of the UVM standard
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of connect 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of connect 
+# -------------------------------------------------------
+# Name                 Type                   Size  Value
+# -------------------------------------------------------
+# Seqncr               Sequencer              -     @519 
+#   rsp_export         uvm_analysis_export    -     @526 
+#   seq_item_export    uvm_seq_item_pull_imp  -     @620 
+#   arbitration_queue  array                  0     -    
+#   lock_queue         array                  0     -    
+#   num_last_reqs      integral               32    'd1  
+#   num_last_rsps      integral               32    'd1  
+# -------------------------------------------------------
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1517) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Starting (deprecated) default sequence 'Seq_device0_and_device1' on sequencer 'uvm_test_top.t_env.Seqncr'. See documentation for uvm_sequencer_base::start_phase_sequence() for information on starting default sequences in UVM.
+# UVM_INFO @ 0: uvm_test_top.t_env.Sbd [Scoreboard] Scoreboard Report 
+# -------------------------------------------------
+# Name       Type                       Size  Value
+# -------------------------------------------------
+# Sbd        Scoreboard                 -     @656 
+#   Drvr2Sb  uvm_analysis_imp_sent_pkt  -     @671 
+#   Rcvr2Sb  uvm_analysis_imp_rcvd_pkt  -     @663 
+# -------------------------------------------------
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    8
+# UVM_WARNING :    6
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [Scoreboard]     1
+# [UVM_DEPRECATED]     6
+# [uvm_test_top.t_env]     4
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 17:53:39 on Jul 17,2023
+# vlog -reportprogress 300 top.sv interface.sv rtl.sv 
+# ** Note: (vlog-2286) top.sv(16): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# -- Compiling interface mem_interface
+# -- Compiling interface input_interface
+# -- Compiling interface output_interface
+# -- Compiling module switch
+# 
+# Top level modules:
+# 	top
+# End time: 17:53:40 on Jul 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:53:43 on Jul 17,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 0
+# vsim top "+UVM_TESTNAME=test1" "+UVM_NO_RELNOTES" 
+# Start time: 17:53:43 on Jul 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.output_interface(fast)
+# Loading work.mem_interface(fast)
+# Loading work.input_interface(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test1...
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_random_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_exhaustive_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_simple_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(477) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] default_sequence config parameter is deprecated and not part of the UVM standard. See documentation for uvm_sequencer_base::start_phase_sequence().
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(482) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] count config parameter is deprecated and not part of the UVM standard
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of connect 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of connect 
+# -------------------------------------------------------
+# Name                 Type                   Size  Value
+# -------------------------------------------------------
+# Seqncr               Sequencer              -     @519 
+#   rsp_export         uvm_analysis_export    -     @526 
+#   seq_item_export    uvm_seq_item_pull_imp  -     @620 
+#   arbitration_queue  array                  0     -    
+#   lock_queue         array                  0     -    
+#   num_last_reqs      integral               32    'd1  
+#   num_last_rsps      integral               32    'd1  
+# -------------------------------------------------------
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1517) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Starting (deprecated) default sequence 'Seq_device0_and_device1' on sequencer 'uvm_test_top.t_env.Seqncr'. See documentation for uvm_sequencer_base::start_phase_sequence() for information on starting default sequences in UVM.
+# UVM_INFO @ 0: uvm_test_top.t_env.Sbd [Scoreboard] Scoreboard Report 
+# -------------------------------------------------
+# Name       Type                       Size  Value
+# -------------------------------------------------
+# Sbd        Scoreboard                 -     @656 
+#   Drvr2Sb  uvm_analysis_imp_sent_pkt  -     @671 
+#   Rcvr2Sb  uvm_analysis_imp_rcvd_pkt  -     @663 
+# -------------------------------------------------
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    8
+# UVM_WARNING :    6
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [Scoreboard]     1
+# [UVM_DEPRECATED]     6
+# [uvm_test_top.t_env]     4
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430

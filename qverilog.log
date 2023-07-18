@@ -1,0 +1,4 @@
+QuestaSim qverilog 10.0b Compiler 2011.05 May  5 2011
+C:\questasim_10.0b\win32\qverilog.exe -reportprogress 300 -guimode makefile.f 
+** Error: (qverilog-7) Failed to open design unit file "makefile.f" in read mode.
+No such file or directory. (errno = ENOENT)
