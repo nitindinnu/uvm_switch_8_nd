@@ -1,6 +1,6 @@
 FILES = rtl.sv interface.sv  top.sv 
 IFILES = Packet.sv Configuration.sv Driver.sv Environment.sv Sequencer.sv Sequence.sv test.sv Scoreboard.sv Receiver.sv
-UVM_FLAGS = +incdir+${UVM_HOME}/src ${UVM_HOME}/src/uvm_pkg.sv
+UVM_FLAGS = +incdir+${UVM_HOME}/src +incdir+${UVM_HOME}/src/uvm_pkg.sv
 VCS_FLAGS = -sverilog +plusarg_save -timescale=1ns/1ns
 
 vcs:	simv

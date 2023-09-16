@@ -1,0 +1,17 @@
+TOP_MODULE=top
+SOURCE=../top.sv ../interface.sv ../rtl.sv
+ANYPACKAGE=
+UVM_VERBOSITY=-testplusarg "UVM_VERBOSITY=UVM_DEBUG"
+UVM_TESTNAME=-testplusarg "UVM_TESTNAME=phases_test"
+NORELNOTE=-testplusarg "UVM_NO_RELNOTES"
+TRACEDB=-testplusarg "UVM_CONFIG_DB_TRACE"
+VALUEPLUSARGS=-testplusarg "REPEATS=5"
+
+all: compile elab simulate
+
+compile:
+	xvlog -sv $(ANYPACKAGE) $(SOURCE) -L uvm 
+elab:
+	xelab -L uvm $(TOP_MODULE) 
+simulate :
+	xsim -R $(TOP_MODULE) $(UVM_TESTNAME) $(UVM_VERBOSITY) $(NORELNOTE) $(TRACEDB) $(VALUEPLUSARGS)

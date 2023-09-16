@@ -1,4 +1,539 @@
-QuestaSim qverilog 10.0b Compiler 2011.05 May  5 2011
-C:\questasim_10.0b\win32\qverilog.exe -reportprogress 300 -guimode makefile.f 
-** Error: (qverilog-7) Failed to open design unit file "makefile.f" in read mode.
-No such file or directory. (errno = ENOENT)
+Start time: 10:44:38 on Sep 16,2023
+qverilog "+incdir+/src" "+incdir+/src/uvm_pkg.sv" "+incdir+." rtl.sv interface.sv top.sv -R "+UVM_TESTNAME=test1" 
+-- Compiling module switch
+-- Compiling interface mem_interface
+-- Compiling interface input_interface
+-- Compiling interface output_interface
+** Note: (qverilog-2286) top.sv(16): Using implicit +incdir+/home/nitindinnu/questa_sim_nitin/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module top
+-- Compiling module test
+** Warning: Packet.sv(95): (qverilog-2240) Treating stand-alone use of function 'unpack_bytes' as an implicit VOID cast.
+
+Top level modules:
+	top
+# vsim -lib work "+UVM_TESTNAME=test1" work.top_sv_unit work.top -c -do "run -all; quit -f" -appendlog -l qverilog.log -vopt 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: Packet.sv(95): (vopt-2240) Treating stand-alone use of function 'unpack_bytes' as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.output_interface(fast)
+# Loading work.mem_interface(fast)
+# Loading work.input_interface(fast)
+# Loading /home/nitindinnu/questa_sim_nitin/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'hac 
+#   sa      integral      8     'h4b 
+#   length  integral      8     'h8  
+#   data    da(integral)  8     -    
+#     [0]   integral      8     'h80 
+#     [1]   integral      8     'h91 
+#     [2]   integral      8     'h7c 
+#     [3]   integral      8     'h21 
+#     [4]   integral      8     'ha7 
+#     [5]   integral      8     'h33 
+#     [6]   integral      8     'h7e 
+#     [7]   integral      8     'hff 
+#   fcs     integral      8     'hb6 
+# -----------------------------------
+# Size of pkd bits          12
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'hac 
+#   sa      integral      8     'h4b 
+#   length  integral      8     'h8  
+#   data    da(integral)  8     -    
+#     [0]   integral      8     'h80 
+#     [1]   integral      8     'h91 
+#     [2]   integral      8     'h7c 
+#     [3]   integral      8     'h21 
+#     [4]   integral      8     'ha7 
+#     [5]   integral      8     'h33 
+#     [6]   integral      8     'h7e 
+#     [7]   integral      8     'hff 
+#   fcs     integral      8     'hb6 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'h85 
+#   sa      integral      8     'hc2 
+#   length  integral      8     'hc  
+#   data    da(integral)  12    -    
+#     [0]   integral      8     'h5e 
+#     [1]   integral      8     'h20 
+#     [2]   integral      8     'hd1 
+#     [3]   integral      8     'ha  
+#     [4]   integral      8     'h9f 
+#     ...   ...           ...   ...  
+#     [7]   integral      8     'h1a 
+#     [8]   integral      8     'h75 
+#     [9]   integral      8     'hf0 
+#     [10]  integral      8     'h9a 
+#     [11]  integral      8     'h89 
+#   fcs     integral      8     'h76 
+# -----------------------------------
+# Size of pkd bits          16
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'h85 
+#   sa      integral      8     'hc2 
+#   length  integral      8     'hc  
+#   data    da(integral)  12    -    
+#     [0]   integral      8     'h5e 
+#     [1]   integral      8     'h20 
+#     [2]   integral      8     'hd1 
+#     [3]   integral      8     'ha  
+#     [4]   integral      8     'h9f 
+#     ...   ...           ...   ...  
+#     [7]   integral      8     'h1a 
+#     [8]   integral      8     'h75 
+#     [9]   integral      8     'hf0 
+#     [10]  integral      8     'h9a 
+#     [11]  integral      8     'h89 
+#   fcs     integral      8     'h76 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'hab 
+#   sa      integral      8     'he4 
+#   length  integral      8     'h17 
+#   data    da(integral)  23    -    
+#     [0]   integral      8     'h51 
+#     [1]   integral      8     'hfa 
+#     [2]   integral      8     'h87 
+#     [3]   integral      8     'hc8 
+#     [4]   integral      8     'h2a 
+#     ...   ...           ...   ...  
+#     [18]  integral      8     'hc3 
+#     [19]  integral      8     'ha7 
+#     [20]  integral      8     'h9  
+#     [21]  integral      8     'h66 
+#     [22]  integral      8     'hf8 
+#   fcs     integral      8     'hf5 
+# -----------------------------------
+# Size of pkd bits          27
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'hab 
+#   sa      integral      8     'he4 
+#   length  integral      8     'h17 
+#   data    da(integral)  23    -    
+#     [0]   integral      8     'h51 
+#     [1]   integral      8     'hfa 
+#     [2]   integral      8     'h87 
+#     [3]   integral      8     'hc8 
+#     [4]   integral      8     'h2a 
+#     ...   ...           ...   ...  
+#     [18]  integral      8     'hc3 
+#     [19]  integral      8     'ha7 
+#     [20]  integral      8     'h9  
+#     [21]  integral      8     'h66 
+#     [22]  integral      8     'hf8 
+#   fcs     integral      8     'hf5 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'h44 
+#   sa      integral      8     'h5c 
+#   length  integral      8     'h37 
+#   data    da(integral)  55    -    
+#     [0]   integral      8     'h24 
+#     [1]   integral      8     'h77 
+#     [2]   integral      8     'hde 
+#     [3]   integral      8     'h7e 
+#     [4]   integral      8     'h73 
+#     ...   ...           ...   ...  
+#     [50]  integral      8     'h78 
+#     [51]  integral      8     'hcc 
+#     [52]  integral      8     'hf0 
+#     [53]  integral      8     'h68 
+#     [54]  integral      8     'h45 
+#   fcs     integral      8     'hb6 
+# -----------------------------------
+# Size of pkd bits          59
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'h44 
+#   sa      integral      8     'h5c 
+#   length  integral      8     'h37 
+#   data    da(integral)  55    -    
+#     [0]   integral      8     'h24 
+#     [1]   integral      8     'h77 
+#     [2]   integral      8     'hde 
+#     [3]   integral      8     'h7e 
+#     [4]   integral      8     'h73 
+#     ...   ...           ...   ...  
+#     [50]  integral      8     'h78 
+#     [51]  integral      8     'hcc 
+#     [52]  integral      8     'hf0 
+#     [53]  integral      8     'h68 
+#     [54]  integral      8     'h45 
+#   fcs     integral      8     'hb6 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'hfb 
+#   sa      integral      8     'hdb 
+#   length  integral      8     'h31 
+#   data    da(integral)  49    -    
+#     [0]   integral      8     'h92 
+#     [1]   integral      8     'he8 
+#     [2]   integral      8     'h3f 
+#     [3]   integral      8     'he4 
+#     [4]   integral      8     'h72 
+#     ...   ...           ...   ...  
+#     [44]  integral      8     'h60 
+#     [45]  integral      8     'hb4 
+#     [46]  integral      8     'h50 
+#     [47]  integral      8     'h94 
+#     [48]  integral      8     'hbf 
+#   fcs     integral      8     'h6d 
+# -----------------------------------
+# Size of pkd bits          53
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'hfb 
+#   sa      integral      8     'hdb 
+#   length  integral      8     'h31 
+#   data    da(integral)  49    -    
+#     [0]   integral      8     'h92 
+#     [1]   integral      8     'he8 
+#     [2]   integral      8     'h3f 
+#     [3]   integral      8     'he4 
+#     [4]   integral      8     'h72 
+#     ...   ...           ...   ...  
+#     [44]  integral      8     'h60 
+#     [45]  integral      8     'hb4 
+#     [46]  integral      8     'h50 
+#     [47]  integral      8     'h94 
+#     [48]  integral      8     'hbf 
+#   fcs     integral      8     'h6d 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'hcd 
+#   sa      integral      8     'hf9 
+#   length  integral      8     'h2  
+#   data    da(integral)  2     -    
+#     [0]   integral      8     'h95 
+#     [1]   integral      8     'h98 
+#   fcs     integral      8     'h3b 
+# -----------------------------------
+# Size of pkd bits           6
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'hcd 
+#   sa      integral      8     'hf9 
+#   length  integral      8     'h2  
+#   data    da(integral)  2     -    
+#     [0]   integral      8     'h95 
+#     [1]   integral      8     'h98 
+#   fcs     integral      8     'h3b 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'hd4 
+#   sa      integral      8     'h50 
+#   length  integral      8     'h2e 
+#   data    da(integral)  46    -    
+#     [0]   integral      8     'h8e 
+#     [1]   integral      8     'hf6 
+#     [2]   integral      8     'h40 
+#     [3]   integral      8     'hcf 
+#     [4]   integral      8     'hd9 
+#     ...   ...           ...   ...  
+#     [41]  integral      8     'ha5 
+#     [42]  integral      8     'ha  
+#     [43]  integral      8     'h9d 
+#     [44]  integral      8     'hac 
+#     [45]  integral      8     'h6  
+#   fcs     integral      8     'h1c 
+# -----------------------------------
+# Size of pkd bits          50
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'hd4 
+#   sa      integral      8     'h50 
+#   length  integral      8     'h2e 
+#   data    da(integral)  46    -    
+#     [0]   integral      8     'h8e 
+#     [1]   integral      8     'hf6 
+#     [2]   integral      8     'h40 
+#     [3]   integral      8     'hcf 
+#     [4]   integral      8     'hd9 
+#     ...   ...           ...   ...  
+#     [41]  integral      8     'ha5 
+#     [42]  integral      8     'ha  
+#     [43]  integral      8     'h9d 
+#     [44]  integral      8     'hac 
+#     [45]  integral      8     'h6  
+#   fcs     integral      8     'h1c 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'h5b 
+#   sa      integral      8     'h3b 
+#   length  integral      8     'h33 
+#   data    da(integral)  51    -    
+#     [0]   integral      8     'h7c 
+#     [1]   integral      8     'h87 
+#     [2]   integral      8     'hba 
+#     [3]   integral      8     'h5a 
+#     [4]   integral      8     'ha1 
+#     ...   ...           ...   ...  
+#     [46]  integral      8     'h32 
+#     [47]  integral      8     'h9b 
+#     [48]  integral      8     'hd0 
+#     [49]  integral      8     'h5e 
+#     [50]  integral      8     'h4e 
+#   fcs     integral      8     'h1e 
+# -----------------------------------
+# Size of pkd bits          55
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'h5b 
+#   sa      integral      8     'h3b 
+#   length  integral      8     'h33 
+#   data    da(integral)  51    -    
+#     [0]   integral      8     'h7c 
+#     [1]   integral      8     'h87 
+#     [2]   integral      8     'hba 
+#     [3]   integral      8     'h5a 
+#     [4]   integral      8     'ha1 
+#     ...   ...           ...   ...  
+#     [46]  integral      8     'h32 
+#     [47]  integral      8     'h9b 
+#     [48]  integral      8     'hd0 
+#     [49]  integral      8     'h5e 
+#     [50]  integral      8     'h4e 
+#   fcs     integral      8     'h1e 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'h11 
+#   sa      integral      8     'h23 
+#   length  integral      8     'h29 
+#   data    da(integral)  41    -    
+#     [0]   integral      8     'hc  
+#     [1]   integral      8     'h8  
+#     [2]   integral      8     'hbe 
+#     [3]   integral      8     'hfb 
+#     [4]   integral      8     'h24 
+#     ...   ...           ...   ...  
+#     [36]  integral      8     'hf1 
+#     [37]  integral      8     'had 
+#     [38]  integral      8     'ha0 
+#     [39]  integral      8     'h47 
+#     [40]  integral      8     'h31 
+#   fcs     integral      8     'h7a 
+# -----------------------------------
+# Size of pkd bits          45
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'h11 
+#   sa      integral      8     'h23 
+#   length  integral      8     'h29 
+#   data    da(integral)  41    -    
+#     [0]   integral      8     'hc  
+#     [1]   integral      8     'h8  
+#     [2]   integral      8     'hbe 
+#     [3]   integral      8     'hfb 
+#     [4]   integral      8     'h24 
+#     ...   ...           ...   ...  
+#     [36]  integral      8     'hf1 
+#     [37]  integral      8     'had 
+#     [38]  integral      8     'ha0 
+#     [39]  integral      8     'h47 
+#     [40]  integral      8     'h31 
+#   fcs     integral      8     'h7a 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+#  Randomization Sucessesfull.
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt1      Packet        -     @338 
+#   da      integral      8     'h32 
+#   sa      integral      8     'h75 
+#   length  integral      8     'h25 
+#   data    da(integral)  37    -    
+#     [0]   integral      8     'h36 
+#     [1]   integral      8     'h6  
+#     [2]   integral      8     'h5e 
+#     [3]   integral      8     'h3c 
+#     [4]   integral      8     'hf9 
+#     ...   ...           ...   ...  
+#     [32]  integral      8     'h55 
+#     [33]  integral      8     'hdd 
+#     [34]  integral      8     'h58 
+#     [35]  integral      8     'h48 
+#     [36]  integral      8     'hb3 
+#   fcs     integral      8     'h76 
+# -----------------------------------
+# Size of pkd bits          41
+# -----------------------------------
+# Name      Type          Size  Value
+# -----------------------------------
+# pkt2      Packet        -     @342 
+#   da      integral      8     'h32 
+#   sa      integral      8     'h75 
+#   length  integral      8     'h25 
+#   data    da(integral)  37    -    
+#     [0]   integral      8     'h36 
+#     [1]   integral      8     'h6  
+#     [2]   integral      8     'h5e 
+#     [3]   integral      8     'h3c 
+#     [4]   integral      8     'hf9 
+#     ...   ...           ...   ...  
+#     [32]  integral      8     'h55 
+#     [33]  integral      8     'hdd 
+#     [34]  integral      8     'h58 
+#     [35]  integral      8     'h48 
+#     [36]  integral      8     'hb3 
+#   fcs     integral      8     'h76 
+# -----------------------------------
+#  Packing,Unpacking and compare worked
+# UVM_INFO @ 0: reporter [RNTST] Running test test1...
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_random_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_exhaustive_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1435) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Registering sequence 'uvm_simple_sequence' with sequencer 'uvm_test_top.t_env.Seqncr' is deprecated. 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of build 
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(477) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] default_sequence config parameter is deprecated and not part of the UVM standard. See documentation for uvm_sequencer_base::start_phase_sequence().
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(482) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] count config parameter is deprecated and not part of the UVM standard
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] START of connect 
+# UVM_INFO @ 0: uvm_test_top.t_env [uvm_test_top.t_env] END of connect 
+# -------------------------------------------------------
+# Name                 Type                   Size  Value
+# -------------------------------------------------------
+# Seqncr               Sequencer              -     @527 
+#   rsp_export         uvm_analysis_export    -     @534 
+#   seq_item_export    uvm_seq_item_pull_imp  -     @628 
+#   arbitration_queue  array                  0     -    
+#   lock_queue         array                  0     -    
+#   num_last_reqs      integral               32    'd1  
+#   num_last_rsps      integral               32    'd1  
+# -------------------------------------------------------
+# UVM_WARNING verilog_src/uvm-1.1d/src/seq/uvm_sequencer_base.svh(1517) @ 0: uvm_test_top.t_env.Seqncr [UVM_DEPRECATED] Starting (deprecated) default sequence 'Seq_device0_and_device1' on sequencer 'uvm_test_top.t_env.Seqncr'. See documentation for uvm_sequencer_base::start_phase_sequence() for information on starting default sequences in UVM.
+# UVM_INFO @ 0: uvm_test_top.t_env.Sbd [Scoreboard] Scoreboard Report 
+# -------------------------------------------------
+# Name       Type                       Size  Value
+# -------------------------------------------------
+# Sbd        Scoreboard                 -     @664 
+#   Drvr2Sb  uvm_analysis_imp_sent_pkt  -     @679 
+#   Rcvr2Sb  uvm_analysis_imp_rcvd_pkt  -     @671 
+# -------------------------------------------------
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    8
+# UVM_WARNING :    6
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [Scoreboard]     1
+# [UVM_DEPRECATED]     6
+# [uvm_test_top.t_env]     4
+# ** Note: $finish    : /home/nitindinnu/questa_sim_nitin/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 0 ns  Iteration: 215  Instance: /top
+# End time: 10:44:42 on Sep 16,2023, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2

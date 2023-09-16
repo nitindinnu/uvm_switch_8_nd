@@ -25,8 +25,8 @@ module top();
 `include "Sequence.sv"
 `include "Driver.sv"
 `include "Receiver.sv"
-//`include "interface.sv"
-//`include "rtl.sv"
+`include "interface.sv"
+`include "rtl.sv"
 `include "Scoreboard.sv" 
 `include "Environment.sv"
 `include "test.sv"
@@ -72,7 +72,8 @@ initial begin
     cfg.mem_intf = mem_intf;
     cfg.output_intf = output_intf;
    
-    run_test("test1");
+    //run_test("test1");
+	run_test();
 end
 
 /////////////////////////////////////////////////////
