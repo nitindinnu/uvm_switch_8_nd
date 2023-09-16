@@ -2,7 +2,6 @@
 **/xsim.dir/
 **/simv*
 **/csrc*/
-**/*.log
 **/*.pb
 **/*.swp
 **/*.key
@@ -15,4 +14,3 @@
 **/DVEfiles
 **/vsim.wlf
 **/INCA_libs
-*.log

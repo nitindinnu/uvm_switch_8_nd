@@ -1,0 +1,11 @@
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe -L uvm top 
+Multi-threading is on. Using 10 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <mem_interface> not found while processing module instance <mem_intf> [D:/uvm_switch_8_nd/top.sv:48]
+ERROR: [VRFC 10-2063] Module <input_interface> not found while processing module instance <input_intf> [D:/uvm_switch_8_nd/top.sv:54]
+ERROR: [VRFC 10-2063] Module <output_interface> not found while processing module instance <output_intf> [D:/uvm_switch_8_nd/top.sv:60]
+ERROR: [VRFC 10-2063] Module <switch> not found while processing module instance <DUT> [D:/uvm_switch_8_nd/top.sv:83]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

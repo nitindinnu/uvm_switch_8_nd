@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/uvm_switch_8_nd/top.sv" into library work
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module test
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Driver.sv:84]
+INFO: [VRFC 10-311] analyzing module switch
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Scoreboard.sv:39]
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Scoreboard.sv:41]
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Scoreboard.sv:44]
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Scoreboard.sv:54]
+WARNING: [VRFC 10-5025] system function call '$psprintf' is not IEEE standard [D:/uvm_switch_8_nd/Environment.sv:36]
+ERROR: [VRFC 10-3000] 'clock' is not valid in an expression [D:/uvm_switch_8_nd/Receiver.sv:52]
+ERROR: [VRFC 10-3000] 'clock' is not valid in an expression [D:/uvm_switch_8_nd/Receiver.sv:56]
+ERROR: [VRFC 10-3000] 'clock' is not valid in an expression [D:/uvm_switch_8_nd/Receiver.sv:60]
+ERROR: [VRFC 10-3000] 'clock' is not valid in an expression [D:/uvm_switch_8_nd/Receiver.sv:65]
+ERROR: [VRFC 10-8530] module 'top' is ignored due to previous errors [D:/uvm_switch_8_nd/top.sv:20]
