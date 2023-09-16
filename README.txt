@@ -19,4 +19,17 @@ For VCS : make vcs
 For Questa : make questa
 To Clean : make clean
 ~~~~~~~~~~~~~~~~~~~~~~~~
- 
+################################
+~~~~~~~~~~~~~~~~~~~~~~~
+changes
+~~~~~~~~~~~~~~~~~~~~~~~~
+made some changes to work with Questasim 10.7c and later versions
+
+updated the Makefile for Questa(use this command) : make -f Makefile_questa questa (or) make questa --------|
+													^file:Makefile_questa			  	^file:Makefile		|in folder vsim
+and also written a run.do for QuestaSim (use) : vsim -do run.do               					   ---------|
+
+tried with vivado UVM library 1.2 encountered 
+		  few errros need to debug(use this command): make -f Makefile_vivado all ----|in folder xsim
+
+~~~~~~~~~~~~~~~~~~~~~~~~
